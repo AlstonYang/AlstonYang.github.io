@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工作 on Alston&#39;s Blog</title>
+    <link>https://alston.top/tags/%E5%B7%A5%E4%BD%9C/</link>
+    <description>Recent content in 工作 on Alston&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 14 Jan 2019 21:51:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://alston.top/tags/%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>中证征信第一天</title>
+      <link>https://alston.top/2019/first-day-in-chinacscs/</link>
+      <pubDate>Mon, 14 Jan 2019 21:51:13 +0800</pubDate>
+      
+      <guid>https://alston.top/2019/first-day-in-chinacscs/</guid>
+      <description>结束第一份工作，今天入职中证征信（大企业部解决方案助理），也算是开始一段新的旅途了。 新人新气象，今天不光是我上班的第一天，还是我把博客搭好的</description>
+    </item>
+    
+  </channel>
+</rss>

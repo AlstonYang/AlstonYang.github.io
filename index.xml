@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alston&#39;s Blog on Alston&#39;s Blog</title>
+    <link>https://alston.top/</link>
+    <description>Recent content in Alston&#39;s Blog on Alston&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 14 Jan 2019 21:51:13 +0800</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>中证征信第一天</title>
+      <link>https://alston.top/2019/first-day-in-chinacscs/</link>
+      <pubDate>Mon, 14 Jan 2019 21:51:13 +0800</pubDate>
+      
+      <guid>https://alston.top/2019/first-day-in-chinacscs/</guid>
+      <description>
+
+&lt;p&gt;结束第一份工作，今天入职中证征信（大企业部解决方案助理），也算是开始一段新的旅途了。&lt;/p&gt;
+
+&lt;p&gt;新人新气象，今天不光是我上班的第一天，还是我把博客搭好的第一天&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。虽然很对不起某位同学，说好了第一篇博文要写篇&lt;strong&gt;IT桔子爬虫教程&lt;/strong&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;的，但是第一篇博文还是献给我的工作，也作为一个日志系统，不定期记录一下工作中的见闻和理解吧。&lt;/p&gt;
+
+&lt;h2 id=&#34;入职&#34;&gt;入职&lt;/h2&gt;
+
+&lt;p&gt;上午办入职手续，这个时候才想到要问五险一金的缴纳比例和基数，在此奉劝各位签约前&lt;strong&gt;一定要问清待遇的组成、五险一金的缴纳基数和缴纳比例&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;入职手续还算是比较简单，HR小姐姐人很好，领我见了几个同事，正式签约后会帮忙领一套文具和一台电脑。电脑配置花了很长时间，而且居然是旧电脑23333&lt;/p&gt;
+
+&lt;p&gt;不能忍，更不能忍的是居然还设了管理员权限！安装个软件都得管理员登录，非常麻烦。下午的时候向管理员申请新电脑，希望能早日给到我吧。。。&lt;/p&gt;
+
+&lt;p&gt;办完入职手续就直接去项目了。同事们都很热情，中午吃饭还带上了我。看得出来工作氛围还是比较轻松的。吃完饭下午回到项目，大家也开始进入工作。我初来乍到，也就先熟悉熟悉材料，旁听一下他们讨论了。&lt;/p&gt;
+
+&lt;h2 id=&#34;工作记录-总结&#34;&gt;工作记录&amp;amp;总结&lt;/h2&gt;
+
+&lt;p&gt;今天会想起写这么一篇文章，主要还是想总结一下看材料和旁听的时候发现的一些新名词吧。&lt;/p&gt;
+
+&lt;p&gt;中证征信做的是内部信用评级——为银行、券商资管提供评级产品、风险预警、市面上难拿到的数据等。&lt;strong&gt;咨询（解决方案）这一块需要用到的知识还挺复合的，需要了解打分卡等常用的信用评级模型、统计/计量知识等，还需要了解数据库的操作（mysql之类的），模型的实现用R，当然也可以用python或者其他语言。&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面两个名词是新接触的，敞口是跟常见定义不同，清单什么的也做一下备注。&lt;/p&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;敞口&lt;br /&gt;&lt;/dt&gt;
+&lt;dd&gt;很奇怪，一般敞口都是指存在风险的部分以及受风险影响的程度，在这里居然指的企业所在行业。&lt;br /&gt;
+&lt;br /&gt;&lt;/dd&gt;
+&lt;dt&gt;超长清单、长清单、短清单、入模指标&lt;br /&gt;&lt;/dt&gt;
+&lt;dd&gt;清单的意思就是指标list，这里日常交流说的跟文档里的有点区别：&lt;br /&gt;&lt;/dd&gt;
+&lt;dd&gt;1. 文档里是通过企业分析得到超长清单→通过数据清洗得到长清单→通过单变量分析、多变量分析、穷举建模等得到短清单→加上综合因素得出基础评级结果；&lt;br /&gt;&lt;/dd&gt;
+&lt;dd&gt;2. 日常交流中使用的术语则是通过企业分析、数据清洗得到长清单→通过单变量分析、多变量分析等得到短清单→通过穷举建模、专家讨论等得到入模指标→加上综合因素得出基础评级结果。&lt;br /&gt;
+&lt;br /&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id=&#34;新的开始-新的期望&#34;&gt;新的开始，新的期望&lt;/h2&gt;
+
+&lt;p&gt;结束在高沣资本的FA生涯来中证征信，也算是彻彻底底的转行了，但愿我能快点适应新工作，快点掌握工作内容吧！业余时间还得花点心思复习FRM，目标今年把FRM考下来！&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;本博客采用&lt;a href=&#34;https://gohugo.io&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;搭建，搭建过程找时间再单独开篇博客。&lt;br /&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;我会找时间写的，I Promise!&lt;br /&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;找时间总结一下中证征信的业务介绍。&lt;br /&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
