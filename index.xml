@@ -11,10 +11,10 @@
     
     <item>
       <title>EXCEL高级排序和匹配方法</title>
-      <link>https://alston.top/2019/excel%E9%AB%98%E7%BA%A7%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8C%B9%E9%85%8D%E6%96%B9%E6%B3%95/</link>
+      <link>https://alston.top/2019/january28/</link>
       <pubDate>Mon, 28 Jan 2019 21:27:25 +0800</pubDate>
       
-      <guid>https://alston.top/2019/excel%E9%AB%98%E7%BA%A7%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8C%B9%E9%85%8D%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://alston.top/2019/january28/</guid>
       <description>
 
 &lt;p&gt;最近有一个任务涉及到比较复杂的EXCEL操作，虽然对EXCEL函数不是很熟悉，但是又想用单个公式解决，所以花了很长时间才解决。成就感十足，特此记录，免得以后忘了。&lt;/p&gt;
@@ -29,9 +29,9 @@
 
 &lt;h3 id=&#34;rank&#34;&gt;rank&lt;/h3&gt;
 
-&lt;p&gt;EXCEL中排序最简单的函数就是用&lt;code&gt;rank&lt;/code&gt;函数了，用法是&lt;code&gt;=rank(num, array,order)&lt;/code&gt;，其中&lt;code&gt;num&lt;/code&gt;是要排名的数值，&lt;code&gt;array&lt;/code&gt;是要排名的序列，&lt;code&gt;order&lt;/code&gt;表示升、降序，默认为0（降序），要升序则设为1。这里需要注意是&lt;code&gt;num&lt;/code&gt;并且在&lt;code&gt;array&lt;/code&gt;中，否则结果为&lt;code&gt;#N/A&lt;/code&gt;。&lt;br /&gt;
-&lt;br/&gt;&lt;br /&gt;
-但是在遇到条件排序时用&lt;code&gt;rank&lt;/code&gt;就不够了，这时候可以用&lt;code&gt;sumproduct&lt;/code&gt;进行排序。&lt;/p&gt;
+&lt;p&gt;EXCEL中排序最简单的函数就是用&lt;code&gt;rank&lt;/code&gt;函数了，用法是&lt;code&gt;=rank(num, array,order)&lt;/code&gt;，其中&lt;code&gt;num&lt;/code&gt;是要排名的数值，&lt;code&gt;array&lt;/code&gt;是要排名的序列，&lt;code&gt;order&lt;/code&gt;表示升、降序，默认为0（降序），要升序则设为1。这里需要注意是&lt;code&gt;num&lt;/code&gt;并且在&lt;code&gt;array&lt;/code&gt;中，否则结果为&lt;code&gt;#N/A&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;但是在遇到条件排序时用&lt;code&gt;rank&lt;/code&gt;就不够了，这时候可以用&lt;code&gt;sumproduct&lt;/code&gt;进行排序。&lt;/p&gt;
 
 &lt;h3 id=&#34;sumproduct&#34;&gt;sumproduct&lt;/h3&gt;
 
@@ -47,23 +47,70 @@
 
 &lt;h3 id=&#34;match&#34;&gt;match&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;match&lt;/code&gt;用于匹配指定值在指定序列中的位置，用法是&lt;code&gt;=match(num, array, type)&lt;/code&gt;，其中&lt;code&gt;num&lt;/code&gt;为要匹配的内容，&lt;code&gt;array&lt;/code&gt;为要匹配的序列，&lt;code&gt;type&lt;/code&gt;为指定的查询方式，取值为-1,0,1，定义如下：&lt;br /&gt;
-|type|说明|&lt;br /&gt;
-|:&amp;mdash;:|:&amp;mdash;:|&lt;br /&gt;
-|1/省略|查找&lt;strong&gt;小于或等于&lt;/strong&gt;指定内容的&lt;strong&gt;最大值&lt;/strong&gt;，而且指定区域必须按&lt;strong&gt;升序&lt;/strong&gt;排列|&lt;br /&gt;
-|0|查找&lt;strong&gt;等于&lt;/strong&gt;指定内容的&lt;strong&gt;第一个&lt;/strong&gt;数值|&lt;br /&gt;
-|-1|查找&lt;strong&gt;大于或等于&lt;/strong&gt;指定内容的&lt;strong&gt;最小值&lt;/strong&gt;，而且指定内容必须按&lt;strong&gt;降序&lt;/strong&gt;排列|&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;match&lt;/code&gt;用于匹配指定值在指定序列中的位置，用法是&lt;code&gt;=match(num, array, type)&lt;/code&gt;，其中&lt;code&gt;num&lt;/code&gt;为要匹配的内容，&lt;code&gt;array&lt;/code&gt;为要匹配的序列，&lt;code&gt;type&lt;/code&gt;为指定的查询方式，取值为-1,0,1，定义如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1/省略&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;查找&lt;strong&gt;小于或等于&lt;/strong&gt;指定内容的&lt;strong&gt;最大值&lt;/strong&gt;，而且指定区域必须按&lt;strong&gt;升序&lt;/strong&gt;排列&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;查找&lt;strong&gt;等于&lt;/strong&gt;指定内容的&lt;strong&gt;第一个&lt;/strong&gt;数值&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;-1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;查找&lt;strong&gt;大于或等于&lt;/strong&gt;指定内容的&lt;strong&gt;最小值&lt;/strong&gt;，而且指定内容必须按&lt;strong&gt;降序&lt;/strong&gt;排列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;h3 id=&#34;address&#34;&gt;address&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;address&lt;/code&gt;用于根据指定行号和列号获得单元格地址，用法是&lt;code&gt;=address(row_num, column_num, [abs_num], [a1], [sheet_text])&lt;/code&gt;。其中&lt;code&gt;abs_num&lt;/code&gt;表示返回的单元格地址格式，取值为1到4，定义如下：&lt;br /&gt;
-|abs_num|说明|&lt;br /&gt;
-|:&amp;mdash;:|:&amp;mdash;:|&lt;br /&gt;
-|1/省略|绝对地址，如&amp;rdquo;$A$1&amp;rdquo;|&lt;br /&gt;
-|2|绝对行号，相对列标，如&amp;rdquo;A$1&amp;rdquo;|&lt;br /&gt;
-|3|相对行号，绝对列标，如&amp;rdquo;$A1&amp;rdquo;|&lt;br /&gt;
-|4|相对地址，如&amp;rdquo;A1&amp;rdquo;|&lt;br /&gt;
-&lt;code&gt;a1&lt;/code&gt;表示返回的单元格样式，取值为1或者省略时，返回A1样式（如上表举例）；取值为0时返回R1C1样式，如&lt;code&gt;R[1]C[1]&lt;/code&gt;。&lt;br /&gt;
+&lt;p&gt;&lt;code&gt;address&lt;/code&gt;用于根据指定行号和列号获得单元格地址，用法是&lt;code&gt;=address(row_num, column_num, [abs_num], [a1], [sheet_text])&lt;/code&gt;。其中&lt;code&gt;abs_num&lt;/code&gt;表示返回的单元格地址格式，取值为1到4，定义如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;abs_num&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1/省略&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;绝对地址，如&amp;rdquo;$A$1&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;绝对行号，相对列标，如&amp;rdquo;A$1&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;相对行号，绝对列标，如&amp;rdquo;$A1&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;相对地址，如&amp;rdquo;A1&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code&gt;a1&lt;/code&gt;表示返回的单元格样式，取值为1或者省略时，返回A1样式（如上表举例）；取值为0时返回R1C1样式，如&lt;code&gt;R[1]C[1]&lt;/code&gt;。&lt;br /&gt;
 &lt;code&gt;sheet_text&lt;/code&gt;表示表名，相当于在返回值前面加上&lt;code&gt;sheet_text!&lt;/code&gt;引用。&lt;/p&gt;
 
 &lt;h3 id=&#34;indirect&#34;&gt;indirect&lt;/h3&gt;
@@ -105,10 +152,10 @@
     
     <item>
       <title>中证征信第一天</title>
-      <link>https://alston.top/2019/first-day-in-chinacscs/</link>
+      <link>https://alston.top/2019/january14/</link>
       <pubDate>Mon, 14 Jan 2019 21:51:13 +0800</pubDate>
       
-      <guid>https://alston.top/2019/first-day-in-chinacscs/</guid>
+      <guid>https://alston.top/2019/january14/</guid>
       <description>
 
 &lt;p&gt;结束第一份工作，今天入职中证征信（大企业部解决方案助理），也算是开始一段新的旅途了。&lt;/p&gt;
