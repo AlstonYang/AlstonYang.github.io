@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Alston&#39;s Blog</title>
-    <link>https://alston.top/posts/</link>
-    <description>Recent content in Posts on Alston&#39;s Blog</description>
+    <title>EXCEL技术 on Alston&#39;s Blog</title>
+    <link>https://alston.top/tags/excel%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in EXCEL技术 on Alston&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 28 Jan 2019 21:27:25 +0800</lastBuildDate>
     
-	<atom:link href="https://alston.top/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alston.top/tags/excel%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://alston.top/2019/excel%E9%AB%98%E7%BA%A7%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8C%B9%E9%85%8D%E6%96%B9%E6%B3%95/</guid>
       <description>最近有一个任务涉及到比较复杂的EXCEL操作，虽然对EXCEL函数不是很熟悉，但是又想用单个公式解决，所以花了很长时间才解决。成就感十足，特</description>
-    </item>
-    
-    <item>
-      <title>中证征信第一天</title>
-      <link>https://alston.top/2019/first-day-in-chinacscs/</link>
-      <pubDate>Mon, 14 Jan 2019 21:51:13 +0800</pubDate>
-      
-      <guid>https://alston.top/2019/first-day-in-chinacscs/</guid>
-      <description>结束第一份工作，今天入职中证征信（大企业部解决方案助理），也算是开始一段新的旅途了。 新人新气象，今天不光是我上班的第一天，还是我把博客搭好的</description>
     </item>
     
   </channel>
