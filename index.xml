@@ -22,7 +22,7 @@
 &lt;h2 id=&#34;任务描述&#34;&gt;任务描述&lt;/h2&gt;
 
 &lt;p&gt;原始任务更复杂一点，出于隐私和简化目的，用一个简单的例子来代替。如图：&lt;br /&gt;
-&lt;img src=&#34;https://s2.ax1x.com/2019/01/28/kMiwtI.png&#34; alt=&#34;EXCEL任务&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;https://alston.top/images/excel任务/excel任务.png&#34; alt=&#34;EXCEL任务&#34; /&gt;&lt;br /&gt;
 左边每一行有惟一的学生ID、所在班别、评判标准、语数英成绩；右边每一行一样，包含了所有的学生信息。现在想根据每个学生的评判标准计算出该学生在班里的排名，比如学生ID为1的学生，计算他的语文成绩在甲班中的排名。&lt;/p&gt;
 
 &lt;h2 id=&#34;需要用到的函数&#34;&gt;需要用到的函数&lt;/h2&gt;
