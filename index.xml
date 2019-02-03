@@ -6,8 +6,52 @@
     <description>Recent content in Alston&#39;s Blog on Alston&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Jan 2019 21:27:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 22:37:27 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>保险那些事</title>
+      <link>https://alston.top/2019/february03/</link>
+      <pubDate>Sun, 03 Feb 2019 22:37:27 +0800</pubDate>
+      
+      <guid>https://alston.top/2019/february03/</guid>
+      <description>
+
+&lt;p&gt;一直想找个时间好好梳理一下各类保险的关系，方便自己买些适合自己的保险。今天刚好有点空，就现查现记，写一下常见的一些保险，顺便给跟我差不多情况的人一点建议。&lt;/p&gt;
+
+&lt;h2 id=&#34;返还型保险-vs-消费型保险&#34;&gt;返还型保险 vs 消费型保险&lt;/h2&gt;
+
+&lt;p&gt;从保费是否返还角度可以将保险分为返还型保险和消费型保险：消费型保险就是传统保险，保障期过了就结束，保费归保险公司所有；返还型保险就是保障期（或者一定期限）后保费归还参保人，有些还会按一定利率计算利息给参保人；此外，还有带有理财性质的分红型保险，我没有什么需求就不考虑了。&lt;/p&gt;
+
+&lt;p&gt;听起来返还型保险好像很值得一买是不是？Wrong！原因很简单，返还型保险太贵了！同样的保障内容，返还型保险比消费型保险贵10倍以上，虽然保费会归还，但是你用价差部分做投资甚至存银行都比返还型保险的多。&lt;/p&gt;
+
+&lt;p&gt;就拿上次泰康的电话营销来说，提供了一个返还型的保险方案，一年要交1万多的保费，交10年，然后20年后返还所有保费的110%。我查了一下相同保额的消费型保险，一年只要200多。你每年把这个差价拿去存银行或者买货基，肯定比买返还型保险划算。即使算上每年消费型保费上涨，返还型保险也完全没有优势。&lt;/p&gt;
+
+&lt;h2 id=&#34;社会保险-vs-商业保险&#34;&gt;社会保险 vs 商业保险&lt;/h2&gt;
+
+&lt;p&gt;社会保险（社保）即常说的“五险一金”的“五险”，包括养老保险、基本医疗保险、失业保险、工伤保险和生育保险。涵盖了一些&lt;strong&gt;基本险种&lt;/strong&gt;的&lt;strong&gt;基本保险&lt;/strong&gt;，一般来说如果有工作的话公司会帮缴部分，自己缴的部分也直接由公司代扣，所以操作起来并不麻烦。社保的详细说明可以参考&lt;a href=&#34;https://www.zhihu.com/question/21545340/answer/116255253&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;刘思辰的回答&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;可见，光有社保远远不够，所以我们还需要买商业保险。商业保险也分很多种——寿险、意外险、综合险、财产险等等，不同情况下需要买不同的保险。这里列举一些我自己可能需要买的险种，记录一下，给自己以及差不多情况的人一个参考。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;意外险：突发情况致残或致死，按比例赔付。注意，一般猝死是不赔付的。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;重疾险：发生约定好的重大疾病时，按比例或者实际产生的医疗赔付。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;住院医疗险：达到条件住院赔付。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;寿险：身故后赔付，自杀一般不赔付，看条款。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;综合险：顾名思义，综合了几种险种的险种，也叫万能险。&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我的情况：刚毕业工作不到一年，寿险暂时不需要，意外险和重疾险应该是比较重要的，住院医疗险待定。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;意外险：刚毕业，身体还不错，所以保险重要应该放在意外险，最好能附加*意外医疗险*。受益人为父母或本人。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;医疗险：大家都力推百万医疗险。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;重疾险：个人比较建议购买长期的重疾险，但是价格有点高。所以先一年一年买吧，有一定经济基础了再买长期的。&lt;br /&gt;
+so，目前我的理想配置是一年期意外险+一年期重疾险+百万医疗险，每年一换。具体哪个保险公司的保险产品待定。以上。&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>EXCEL高级排序和匹配方法</title>
