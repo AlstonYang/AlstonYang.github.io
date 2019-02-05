@@ -6,8 +6,37 @@
     <description>Recent content in Alston&#39;s Blog on Alston&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Feb 2019 22:37:27 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Feb 2019 22:51:42 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python爬虫实战1 - 以IT桔子每周融资信息为例</title>
+      <link>https://alston.top/itjuzi/python-itjuzi-1/</link>
+      <pubDate>Tue, 05 Feb 2019 22:51:42 +0800</pubDate>
+      
+      <guid>https://alston.top/itjuzi/python-itjuzi-1/</guid>
+      <description>&lt;p&gt;快乐时光总是过得特别快，又到了还债的时候了sign……&lt;/p&gt;
+
+&lt;p&gt;本来说好第一篇博客献给某同志、写写怎么用python爬取IT桔子每周的融资信息的，但是由于各种这样那样的原因，一直拖到了现在，由衷地表示歉意哈哈。&lt;/p&gt;
+
+&lt;p&gt;Anyway，这篇文章算是第一篇真正的技术博客了，是爬虫的实战应用，所以会写得比较简单，主要是帮助入门者理清爬虫的几个大方向的概念。&lt;strong&gt;代码之前运行没问题，但是IT桔子一直在改版，所以现在用不了，而且我也没有IT桔子账号密码了，所以代码还是仅供参考，需要再改改才能用。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;本来想写得简单一点的，但是考虑到博文阅读对象，还是打算从基础写起，希望能为初学者提供一点帮助。&lt;/p&gt;
+
+&lt;p&gt;先列个清单，列一下需要写哪些知识点，也方便阅读者跳转阅读。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;python基础&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;itjuzi爬虫总述&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;requests基础&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;BeautifulSoup基础&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;openpyxl基础&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;立个flag，尽量在一个月内写完吧23333&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>保险那些事</title>
@@ -48,8 +77,10 @@
 &lt;li&gt;意外险：刚毕业，身体还不错，所以保险重要应该放在意外险，最好能附加*意外医疗险*。受益人为父母或本人。&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;医疗险：大家都力推百万医疗险。&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;重疾险：个人比较建议购买长期的重疾险，但是价格有点高。所以先一年一年买吧，有一定经济基础了再买长期的。&lt;br /&gt;
-so，目前我的理想配置是一年期意外险+一年期重疾险+百万医疗险，每年一换。具体哪个保险公司的保险产品待定。以上。&lt;br /&gt;&lt;/li&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;so，目前我的理想配置是一年期意外险+一年期重疾险+百万医疗险，每年一换。具体哪个保险公司的保险产品待定。以上。&lt;/p&gt;
 </description>
     </item>
     

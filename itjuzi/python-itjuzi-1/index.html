@@ -9,9 +9,9 @@
   <meta name="description" content="Alston的个人博客，走过路过可以错过，反正我的文笔烂得跟小学生一样">
   <meta name="keywords" content="Alston 个人博客">
   
-  <link rel="prev" href="https://alston.top/2019/january28/" />
   
-  <link rel="canonical" href="https://alston.top/2019/february03/" />
+  
+  <link rel="canonical" href="https://alston.top/itjuzi/python-itjuzi-1/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           保险那些事 | Alston&#39;s Blog
+           Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog
        
   </title>
-  <meta name="title" content="保险那些事 | Alston&#39;s Blog">
+  <meta name="title" content="Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -43,10 +43,10 @@
          "@type": "WebPage",
          "@id": "https://alston.top"
     },
-    "articleSection" : "posts",
-    "name" : "保险那些事",
-    "headline" : "保险那些事",
-    "description" : "记录一下各类保险",
+    "articleSection" : "itjuzi",
+    "name" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
+    "headline" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
+    "description" : "用Python爬取IT桔子每周融资信息",
     "inLanguage" : "zh-cn",
     "author" : "Alston.Yang",
     "creator" : "Alston.Yang",
@@ -54,11 +54,11 @@
     "accountablePerson" : "Alston.Yang",
     "copyrightHolder" : "Alston.Yang",
     "copyrightYear" : "2019",
-    "datePublished": "2019-02-03 22:37:27 &#43;0800 CST",
-    "dateModified" : "2019-02-03 22:37:27 &#43;0800 CST",
-    "url" : "https://alston.top/2019/february03/",
-    "wordCount" : "1061",
-    "keywords" : [ "记录","保险", "Alston&#39;s Blog"]
+    "datePublished": "2019-02-05 22:51:42 &#43;0800 CST",
+    "dateModified" : "2019-02-05 22:51:42 &#43;0800 CST",
+    "url" : "https://alston.top/itjuzi/python-itjuzi-1/",
+    "wordCount" : "383",
+    "keywords" : [ "python","编程", "Alston&#39;s Blog"]
 }
 </script>
 
@@ -116,17 +116,16 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">保险那些事</h1>
+        <h1 class="post-title" itemprop="name headline">Python爬虫实战1 - 以IT桔子每周融资信息为例</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://alston.top" rel="author">Alston.Yang</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-02-03 itemprop="datePublished">February 3, 2019</time>
+                on <time datetime=2019-02-05 itemprop="datePublished">February 5, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://alston.top/categories/%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/"> 学习·随笔 </a>
-                        <a href="https://alston.top/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"> 工作·记录 </a>
+                        <a href="https://alston.top/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"> 编程·技术 </a>
                         
                 </span>
         </div>
@@ -147,43 +146,26 @@
           
           
 
-          
+          <p>快乐时光总是过得特别快，又到了还债的时候了sign……</p>
 
-<p>一直想找个时间好好梳理一下各类保险的关系，方便自己买些适合自己的保险。今天刚好有点空，就现查现记，写一下常见的一些保险，顺便给跟我差不多情况的人一点建议。</p>
+<p>本来说好第一篇博客献给某同志、写写怎么用python爬取IT桔子每周的融资信息的，但是由于各种这样那样的原因，一直拖到了现在，由衷地表示歉意哈哈。</p>
 
-<h2 id="返还型保险-vs-消费型保险">返还型保险 vs 消费型保险</h2>
+<p>Anyway，这篇文章算是第一篇真正的技术博客了，是爬虫的实战应用，所以会写得比较简单，主要是帮助入门者理清爬虫的几个大方向的概念。<strong>代码之前运行没问题，但是IT桔子一直在改版，所以现在用不了，而且我也没有IT桔子账号密码了，所以代码还是仅供参考，需要再改改才能用。</strong></p>
 
-<p>从保费是否返还角度可以将保险分为返还型保险和消费型保险：消费型保险就是传统保险，保障期过了就结束，保费归保险公司所有；返还型保险就是保障期（或者一定期限）后保费归还参保人，有些还会按一定利率计算利息给参保人；此外，还有带有理财性质的分红型保险，我没有什么需求就不考虑了。</p>
+<p>本来想写得简单一点的，但是考虑到博文阅读对象，还是打算从基础写起，希望能为初学者提供一点帮助。</p>
 
-<p>听起来返还型保险好像很值得一买是不是？Wrong！原因很简单，返还型保险太贵了！同样的保障内容，返还型保险比消费型保险贵10倍以上，虽然保费会归还，但是你用价差部分做投资甚至存银行都比返还型保险的多。</p>
+<p>先列个清单，列一下需要写哪些知识点，也方便阅读者跳转阅读。</p>
 
-<p>就拿上次泰康的电话营销来说，提供了一个返还型的保险方案，一年要交1万多的保费，交10年，然后20年后返还所有保费的110%。我查了一下相同保额的消费型保险，一年只要200多。你每年把这个差价拿去存银行或者买货基，肯定比买返还型保险划算。即使算上每年消费型保费上涨，返还型保险也完全没有优势。</p>
-
-<h2 id="社会保险-vs-商业保险">社会保险 vs 商业保险</h2>
-
-<p>社会保险（社保）即常说的“五险一金”的“五险”，包括养老保险、基本医疗保险、失业保险、工伤保险和生育保险。涵盖了一些<strong>基本险种</strong>的<strong>基本保险</strong>，一般来说如果有工作的话公司会帮缴部分，自己缴的部分也直接由公司代扣，所以操作起来并不麻烦。社保的详细说明可以参考<a href="https://www.zhihu.com/question/21545340/answer/116255253" rel="nofollow noreferrer" target="_blank">刘思辰的回答</a>。</p>
-
-<p>可见，光有社保远远不够，所以我们还需要买商业保险。商业保险也分很多种——寿险、意外险、综合险、财产险等等，不同情况下需要买不同的保险。这里列举一些我自己可能需要买的险种，记录一下，给自己以及差不多情况的人一个参考。</p>
-
-<ul>
-<li>意外险：突发情况致残或致死，按比例赔付。注意，一般猝死是不赔付的。<br /></li>
-<li>重疾险：发生约定好的重大疾病时，按比例或者实际产生的医疗赔付。<br /></li>
-<li>住院医疗险：达到条件住院赔付。<br /></li>
-<li>寿险：身故后赔付，自杀一般不赔付，看条款。<br /></li>
-<li>综合险：顾名思义，综合了几种险种的险种，也叫万能险。<br />
+<ol>
+<li>python基础<br /></li>
+<li>itjuzi爬虫总述<br /></li>
+<li>requests基础<br /></li>
+<li>BeautifulSoup基础<br /></li>
+<li>openpyxl基础<br />
 <br /></li>
-</ul>
+</ol>
 
-<p>我的情况：刚毕业工作不到一年，寿险暂时不需要，意外险和重疾险应该是比较重要的，住院医疗险待定。</p>
-
-<ul>
-<li>意外险：刚毕业，身体还不错，所以保险重要应该放在意外险，最好能附加*意外医疗险*。受益人为父母或本人。<br /></li>
-<li>医疗险：大家都力推百万医疗险。<br /></li>
-<li>重疾险：个人比较建议购买长期的重疾险，但是价格有点高。所以先一年一年买吧，有一定经济基础了再买长期的。<br />
-<br /></li>
-</ul>
-
-<p>so，目前我的理想配置是一年期意外险+一年期重疾险+百万医疗险，每年一换。具体哪个保险公司的保险产品待定。以上。</p>
+<p>立个flag，尽量在一个月内写完吧23333</p>
 
     </div>
 
@@ -198,7 +180,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <span><a href=https://alston.top/2019/february03/>https://alston.top/2019/february03/</a></span>
+                    <span><a href=https://alston.top/itjuzi/python-itjuzi-1/>https://alston.top/itjuzi/python-itjuzi-1/</a></span>
             </p>
             
              
@@ -214,11 +196,11 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://alston.top/tags/%E8%AE%B0%E5%BD%95/">
-                    #记录</a></span>
+            <span class="tag"><a href="https://alston.top/tags/python/">
+                    #python</a></span>
             
-            <span class="tag"><a href="https://alston.top/tags/%E4%BF%9D%E9%99%A9/">
-                    #保险</a></span>
+            <span class="tag"><a href="https://alston.top/tags/%E7%BC%96%E7%A8%8B/">
+                    #编程</a></span>
             
             </section>
         
@@ -229,8 +211,6 @@
     </div>
 
     <div class="post-nav">
-        
-        <a href="https://alston.top/2019/january28/" class="prev" rel="prev" title="EXCEL高级排序和匹配方法"><i class="iconfont icon-left"></i>&nbsp;EXCEL高级排序和匹配方法</a>
          
         
     </div>
