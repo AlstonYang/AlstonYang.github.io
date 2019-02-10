@@ -22,10 +22,10 @@
   <title>
        
        
-           Python爬虫实战1 | Alston&#39;s Blog
+           Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog
        
   </title>
-  <meta name="title" content="Python爬虫实战1 | Alston&#39;s Blog">
+  <meta name="title" content="Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https://alston.top"
     },
     "articleSection" : "posts",
-    "name" : "Python爬虫实战1",
-    "headline" : "Python爬虫实战1",
-    "description" : "Summary of this article",
+    "name" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
+    "headline" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
+    "description" : "用Python爬取IT桔子每周融资信息",
     "inLanguage" : "zh-cn",
     "author" : "Alston.Yang",
     "creator" : "Alston.Yang",
@@ -57,8 +57,8 @@
     "datePublished": "2019-02-05 22:51:42 &#43;0800 CST",
     "dateModified" : "2019-02-05 22:51:42 &#43;0800 CST",
     "url" : "https://alston.top/2019/february05/",
-    "wordCount" : "0",
-    "keywords" : [ "python","R","感想","吐槽","记录", "Alston&#39;s Blog"]
+    "wordCount" : "383",
+    "keywords" : [ "python","编程","itjuzi", "Alston&#39;s Blog"]
 }
 </script>
 
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Python爬虫实战1</h1>
+        <h1 class="post-title" itemprop="name headline">Python爬虫实战1 - 以IT桔子每周融资信息为例</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://alston.top" rel="author">Alston.Yang</a> with ♥ 
                 <span class="post-time">
@@ -126,10 +126,6 @@
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
                         <a href="https://alston.top/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"> 编程·技术 </a>
-                        <a href="https://alston.top/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"> 软件·推荐 </a>
-                        <a href="https://alston.top/categories/%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/"> 学习·随笔 </a>
-                        <a href="https://alston.top/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AE%B0/"> 生活·日记 </a>
-                        <a href="https://alston.top/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"> 工作·记录 </a>
                         
                 </span>
         </div>
@@ -150,7 +146,27 @@
           
           
 
-          
+          <p>快乐时光总是过得特别快，又到了还债的时候了sign……</p>
+
+<p>本来说好第一篇博客献给某同志、写写怎么用python爬取IT桔子每周的融资信息的，但是由于各种这样那样的原因，一直拖到了现在，由衷地表示歉意哈哈。</p>
+
+<p>Anyway，这篇文章算是第一篇真正的技术博客了，是爬虫的实战应用，所以会写得比较简单，主要是帮助入门者理清爬虫的几个大方向的概念。<strong>代码之前运行没问题，但是IT桔子一直在改版，所以现在用不了，而且我也没有IT桔子账号密码了，所以代码还是仅供参考，需要再改改才能用。</strong></p>
+
+<p>本来想写得简单一点的，但是考虑到博文阅读对象，还是打算从基础写起，希望能为初学者提供一点帮助。</p>
+
+<p>先列个清单，列一下需要写哪些知识点，也方便阅读者跳转阅读。</p>
+
+<ol>
+<li>python基础<br /></li>
+<li>itjuzi爬虫总述<br /></li>
+<li>requests基础<br /></li>
+<li>BeautifulSoup基础<br /></li>
+<li>openpyxl基础<br />
+<br /></li>
+</ol>
+
+<p>立个flag，尽量在一个月内写完吧23333</p>
+
     </div>
 
     <div class="post-copyright">
@@ -183,17 +199,11 @@
             <span class="tag"><a href="https://alston.top/tags/python/">
                     #python</a></span>
             
-            <span class="tag"><a href="https://alston.top/tags/r/">
-                    #R</a></span>
+            <span class="tag"><a href="https://alston.top/tags/%E7%BC%96%E7%A8%8B/">
+                    #编程</a></span>
             
-            <span class="tag"><a href="https://alston.top/tags/%E6%84%9F%E6%83%B3/">
-                    #感想</a></span>
-            
-            <span class="tag"><a href="https://alston.top/tags/%E5%90%90%E6%A7%BD/">
-                    #吐槽</a></span>
-            
-            <span class="tag"><a href="https://alston.top/tags/%E8%AE%B0%E5%BD%95/">
-                    #记录</a></span>
+            <span class="tag"><a href="https://alston.top/tags/itjuzi/">
+                    #itjuzi</a></span>
             
             </section>
         
