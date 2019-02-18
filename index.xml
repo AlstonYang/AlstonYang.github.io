@@ -6,8 +6,64 @@
     <description>Recent content in Alston&#39;s Blog on Alston&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Feb 2019 22:51:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 23:47:31 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python爬虫实战2 - 以IT桔子每周融资信息为例</title>
+      <link>https://alston.top/2019/february17/</link>
+      <pubDate>Sun, 17 Feb 2019 23:47:31 +0800</pubDate>
+      
+      <guid>https://alston.top/2019/february17/</guid>
+      <description>
+
+&lt;p&gt;爬虫分三个步骤：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;爬取目标网页内容&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;解析网页内容，并得到需要的内容&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;保存内容&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其中，第3步比较简单直观，暂时先不讲，在后文应用过程中解释。重点讲讲第1和第2步。&lt;/p&gt;
+
+&lt;h2 id=&#34;解析网页内容&#34;&gt;解析网页内容&lt;/h2&gt;
+
+&lt;p&gt;绝多大数网页是用HTML语言写的（你可以试试打开一个网页，右键选择“另存为”，保存到本地的就是一个HTML文件）。HTML（HyperText Markup Language），又称超文本标记语言，是一种标记语言，浏览器从服务器接收到HTML文件后按其标记内容进行解释，并呈现出不同的样式效果，从而形成丰富多样的网页。&lt;/p&gt;
+
+&lt;p&gt;HTML文件由一个个标记块组成，比如下面是一个非常简单的HTML文件，你可以新建一个txt文件，输入以下内容，然后另存为html格式，双击打开就可以看到效果了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;网页标题&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;我的第一个标题&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;我的第一个段落。&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以看到，大多数的内容由成对出现的标签和文本内容组成，标签用来指明该内容的含义，如段落标签为&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;、一级标题标签为&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt;。成对的标签中间则为正式的文本内容。每对标签及其内容称为一个元素（element）。&lt;/p&gt;
+
+&lt;p&gt;文中，第一行注明这个html文件是以html5的标准来解释的，之后&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;元素是html的内容，它又由&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;组成。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;是html头，用于包含整个html文档的属性信息，比如&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;表示这个html文件的标题等。&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;是html的正文部分，里面是这个html文件/网页最终呈现的内容，如&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt;是一级标题，&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;表示段落等。&lt;/p&gt;
+
+&lt;p&gt;每个元素还可以设置属性，这也是我们解析html文档是需要使用到的。如&lt;code&gt;&amp;lt;div class=&#39;content&#39; id=&#39;div&#39;&amp;gt;XXX&amp;lt;/div&amp;gt;&lt;/code&gt;表示一个div元素，它的class属性（也叫类）是content，它的id属性是div。这两个都可以用来将这个div元素跟其他div元素区别开，其中，class属性可以共享（多个元素同个class），而id属性是惟一的。所以，如果目标内容对应的元素有id属性，则可以直接定位到该元素。&lt;/p&gt;
+
+&lt;p&gt;爬虫第一步就是需要分析要爬的网页的结构内容，这篇文章介绍了HTML语言的基础信息，对html有个大概的了解，下一篇讲讲itjuzi每周融资信息的网页分析。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3school.com.cn/html/index.asp&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;HTML基础教程&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Python爬虫实战1 - 以IT桔子每周融资信息为例</title>
@@ -21,18 +77,21 @@
 
 &lt;p&gt;Anyway，这篇文章算是第一篇真正的技术博客了，是爬虫的实战应用，所以会写得比较简单，主要是帮助入门者理清爬虫的几个大方向的概念。&lt;strong&gt;代码之前运行没问题，但是IT桔子一直在改版，所以现在用不了，而且我也没有IT桔子账号密码了，所以代码还是仅供参考，需要再改改才能用。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;本来想写得简单一点的，但是考虑到博文阅读对象，还是打算从基础写起，希望能为初学者提供一点帮助。&lt;/p&gt;
-
-&lt;p&gt;先列个清单，列一下需要写哪些知识点，也方便阅读者跳转阅读。&lt;/p&gt;
+&lt;p&gt;先列个清单，列一下需要用到的相关知识点教程，初学者建议先看看这些教程。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;python基础&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;itjuzi爬虫总述&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;requests基础&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;BeautifulSoup基础&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;openpyxl基础&lt;br /&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3.7/tutorial/index.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;python基础&lt;/a&gt; &amp;ndash; 看前五章，对python有个基本认识就ok了&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3.7/tutorial/index.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;requests基础&lt;/a&gt; &amp;ndash; 也可以看&lt;a href=&#34;http://docs.python-requests.org/zh_CN/latest/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;requests官方文档&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;BeautifulSoup基础&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://seleniumhq.github.io/selenium/docs/api/py/index.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;selenium基础&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/BlueSkyyj/p/8298748.html&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;splinter基础&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openpyxl.readthedocs.io/en/stable/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;openpyxl基础&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;条条大路通罗马，在python里可以用不同的库完成同样的任务，这里列举的是我自己使用的一些跟爬虫有关的工具教程，读者可以根据自身情况查看对应内容，不一定跟我的一样，重要的是思想。另外，这些文档看起来很多，但是只需要看个大概就可以了，我也尽量用最简单的方法来解决问题，遇到高级的再搜索用法就ok了。&lt;/p&gt;
+
+&lt;p&gt;最后，强烈推荐读一读&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;廖雪峰的python教程&lt;/a&gt;，这是我见过最好的入门教程了，简单易懂，而且有很多应用。&lt;/p&gt;
 
 &lt;p&gt;立个flag，尽量在一个月内写完吧23333&lt;/p&gt;
 </description>

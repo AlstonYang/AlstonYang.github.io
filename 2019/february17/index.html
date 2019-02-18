@@ -9,9 +9,9 @@
   <meta name="description" content="Alston的个人博客，走过路过可以错过，反正我的文笔烂得跟小学生一样">
   <meta name="keywords" content="Alston 个人博客">
   
+  <link rel="prev" href="https://alston.top/2019/february05/" />
   
-  
-  <link rel="canonical" href="https://alston.top/itjuzi/python-itjuzi-1/" />
+  <link rel="canonical" href="https://alston.top/2019/february17/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog
+           Python爬虫实战2 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog
        
   </title>
-  <meta name="title" content="Python爬虫实战1 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog">
+  <meta name="title" content="Python爬虫实战2 - 以IT桔子每周融资信息为例 | Alston&#39;s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -43,10 +43,10 @@
          "@type": "WebPage",
          "@id": "https://alston.top"
     },
-    "articleSection" : "itjuzi",
-    "name" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
-    "headline" : "Python爬虫实战1 - 以IT桔子每周融资信息为例",
-    "description" : "用Python爬取IT桔子每周融资信息",
+    "articleSection" : "posts",
+    "name" : "Python爬虫实战2 - 以IT桔子每周融资信息为例",
+    "headline" : "Python爬虫实战2 - 以IT桔子每周融资信息为例",
+    "description" : "用Python爬取IT桔子每周融资信息之——python爬虫总述",
     "inLanguage" : "zh-cn",
     "author" : "Alston.Yang",
     "creator" : "Alston.Yang",
@@ -54,11 +54,11 @@
     "accountablePerson" : "Alston.Yang",
     "copyrightHolder" : "Alston.Yang",
     "copyrightYear" : "2019",
-    "datePublished": "2019-02-05 22:51:42 &#43;0800 CST",
-    "dateModified" : "2019-02-05 22:51:42 &#43;0800 CST",
-    "url" : "https://alston.top/itjuzi/python-itjuzi-1/",
-    "wordCount" : "383",
-    "keywords" : [ "python","编程", "Alston&#39;s Blog"]
+    "datePublished": "2019-02-17 23:47:31 &#43;0800 CST",
+    "dateModified" : "2019-02-17 23:47:31 &#43;0800 CST",
+    "url" : "https://alston.top/2019/february17/",
+    "wordCount" : "1096",
+    "keywords" : [ "python","编程","itjuzi", "Alston&#39;s Blog"]
 }
 </script>
 
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Python爬虫实战1 - 以IT桔子每周融资信息为例</h1>
+        <h1 class="post-title" itemprop="name headline">Python爬虫实战2 - 以IT桔子每周融资信息为例</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://alston.top" rel="author">Alston.Yang</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-02-05 itemprop="datePublished">February 5, 2019</time>
+                on <time datetime=2019-02-17 itemprop="datePublished">February 17, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
@@ -146,26 +146,53 @@
           
           
 
-          <p>快乐时光总是过得特别快，又到了还债的时候了sign……</p>
+          
 
-<p>本来说好第一篇博客献给某同志、写写怎么用python爬取IT桔子每周的融资信息的，但是由于各种这样那样的原因，一直拖到了现在，由衷地表示歉意哈哈。</p>
-
-<p>Anyway，这篇文章算是第一篇真正的技术博客了，是爬虫的实战应用，所以会写得比较简单，主要是帮助入门者理清爬虫的几个大方向的概念。<strong>代码之前运行没问题，但是IT桔子一直在改版，所以现在用不了，而且我也没有IT桔子账号密码了，所以代码还是仅供参考，需要再改改才能用。</strong></p>
-
-<p>本来想写得简单一点的，但是考虑到博文阅读对象，还是打算从基础写起，希望能为初学者提供一点帮助。</p>
-
-<p>先列个清单，列一下需要写哪些知识点，也方便阅读者跳转阅读。</p>
+<p>爬虫分三个步骤：</p>
 
 <ol>
-<li>python基础<br /></li>
-<li>itjuzi爬虫总述<br /></li>
-<li>requests基础<br /></li>
-<li>BeautifulSoup基础<br /></li>
-<li>openpyxl基础<br />
+<li>爬取目标网页内容<br /></li>
+<li>解析网页内容，并得到需要的内容<br /></li>
+<li>保存内容<br />
 <br /></li>
 </ol>
 
-<p>立个flag，尽量在一个月内写完吧23333</p>
+<p>其中，第3步比较简单直观，暂时先不讲，在后文应用过程中解释。重点讲讲第1和第2步。</p>
+
+<h2 id="解析网页内容">解析网页内容</h2>
+
+<p>绝多大数网页是用HTML语言写的（你可以试试打开一个网页，右键选择“另存为”，保存到本地的就是一个HTML文件）。HTML（HyperText Markup Language），又称超文本标记语言，是一种标记语言，浏览器从服务器接收到HTML文件后按其标记内容进行解释，并呈现出不同的样式效果，从而形成丰富多样的网页。</p>
+
+<p>HTML文件由一个个标记块组成，比如下面是一个非常简单的HTML文件，你可以新建一个txt文件，输入以下内容，然后另存为html格式，双击打开就可以看到效果了。</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;网页标题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;我的第一个标题&lt;/h1&gt;
+    &lt;p&gt;我的第一个段落。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>可以看到，大多数的内容由成对出现的标签和文本内容组成，标签用来指明该内容的含义，如段落标签为<code>&lt;p&gt;&lt;/p&gt;</code>、一级标题标签为<code>&lt;h1&gt;&lt;/h1&gt;</code>。成对的标签中间则为正式的文本内容。每对标签及其内容称为一个元素（element）。</p>
+
+<p>文中，第一行注明这个html文件是以html5的标准来解释的，之后<code>&lt;html&gt;</code>元素是html的内容，它又由<code>&lt;head&gt;</code>和<code>&lt;body&gt;</code>组成。</p>
+
+<p><code>&lt;head&gt;</code>是html头，用于包含整个html文档的属性信息，比如<code>&lt;title&gt;</code>表示这个html文件的标题等。<code>&lt;body&gt;</code>是html的正文部分，里面是这个html文件/网页最终呈现的内容，如<code>&lt;h1&gt;&lt;/h1&gt;</code>是一级标题，<code>&lt;p&gt;&lt;/p&gt;</code>表示段落等。</p>
+
+<p>每个元素还可以设置属性，这也是我们解析html文档是需要使用到的。如<code>&lt;div class='content' id='div'&gt;XXX&lt;/div&gt;</code>表示一个div元素，它的class属性（也叫类）是content，它的id属性是div。这两个都可以用来将这个div元素跟其他div元素区别开，其中，class属性可以共享（多个元素同个class），而id属性是惟一的。所以，如果目标内容对应的元素有id属性，则可以直接定位到该元素。</p>
+
+<p>爬虫第一步就是需要分析要爬的网页的结构内容，这篇文章介绍了HTML语言的基础信息，对html有个大概的了解，下一篇讲讲itjuzi每周融资信息的网页分析。</p>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+<li><a href="http://www.w3school.com.cn/html/index.asp" rel="nofollow noreferrer" target="_blank">HTML基础教程</a><br /></li>
+</ol>
 
     </div>
 
@@ -180,7 +207,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <span><a href=https://alston.top/itjuzi/python-itjuzi-1/>https://alston.top/itjuzi/python-itjuzi-1/</a></span>
+                    <span><a href=https://alston.top/2019/february17/>https://alston.top/2019/february17/</a></span>
             </p>
             
              
@@ -202,6 +229,9 @@
             <span class="tag"><a href="https://alston.top/tags/%E7%BC%96%E7%A8%8B/">
                     #编程</a></span>
             
+            <span class="tag"><a href="https://alston.top/tags/itjuzi/">
+                    #itjuzi</a></span>
+            
             </section>
         
         <section>
@@ -211,6 +241,8 @@
     </div>
 
     <div class="post-nav">
+        
+        <a href="https://alston.top/2019/february05/" class="prev" rel="prev" title="Python爬虫实战1 - 以IT桔子每周融资信息为例"><i class="iconfont icon-left"></i>&nbsp;Python爬虫实战1 - 以IT桔子每周融资信息为例</a>
          
         
     </div>

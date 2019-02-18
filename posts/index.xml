@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alston&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Feb 2019 22:51:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 23:47:31 +0800</lastBuildDate>
     
 	<atom:link href="https://alston.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python爬虫实战2 - 以IT桔子每周融资信息为例</title>
+      <link>https://alston.top/2019/february17/</link>
+      <pubDate>Sun, 17 Feb 2019 23:47:31 +0800</pubDate>
+      
+      <guid>https://alston.top/2019/february17/</guid>
+      <description>爬虫分三个步骤： 爬取目标网页内容 解析网页内容，并得到需要的内容 保存内容 其中，第3步比较简单直观，暂时先不讲，在后文应用过程中解释。重点讲讲第</description>
+    </item>
     
     <item>
       <title>Python爬虫实战1 - 以IT桔子每周融资信息为例</title>
